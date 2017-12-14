@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Portfolio</title>
+  <style>
+  
+  /* Common styling options */
+  
+    * {
+      box-sizing: border-box;
+      font: 100% Open Sans, georgia, serif;
+	  color: #2d3c49;
+    }
+	
+	.bigtext{
+	font: 30px Open Sans, georgia, serif;
+	word-wrap: break-word;
+	}
+	
+	.smalltext{
+	font: 25px Open Sans, georgia, serif;
+	word-wrap: break-word;
+	}
+	
+	h1{
+	color:#7d97ad;
+	}
+	
+    .bordered {
+      border: 2px solid #2e3d49;
+    }
+	
+    .left {
+      float: left;
+    }
+		
+	.right-align{
+		text-align: right;
+	}
+	
+	@media screen and (min-width: 500px){
+	.parent{
+		margin-left: 200px;
+		margin-right: 150px;
+	}
+	}
+	
+	/* Header */
+	
+	.headertext{
+		font-size: 40px;
+		font-weight: 100;
+		text-transform: capitalize;
+		min-height: 100%;
+	}
+	
+	.logo{
+		min-height: 100%;
+		height: 70px;
+	}
+	
+	.line{
+		max-height:100%;
+		height: 20px;
+		border-bottom: 5px solid;
+		border-bottom-color: #7d97ad;
+		margin-left: 0;
+	}
+	
+	/* Content */
+		
+	.mainimage{
+		max-width: 100%;
+		width: 100%;
+		
+		
+	}
+	
+	.proj-image{
+		max-width: 100%;
+		width: 95%;
+		height: 200px;
+		
+	}
+	
+	@media screen and (min-width: 1200px){
+	.projectfig{
+		display: inline-block;
+		margin: 0;
+		width: 33%;
+		text-align: center;
+		max-width: 100%;
+		vertical-align: top;
+	}
+	}
+	@media screen and (max-width: 1200px){
+	.projectfig{
+		display: inline-block;
+		margin: 0;
+		width: 49%;
+		text-align: center;
+		max-width: 100%;
+		vertical-align: top;
+	}
+	}
+	.projecturl{
+		font-size: 15px;
+		max-width: 100%;
+		word-wrap: break-word;
+	}
+	
+	
+  </style>
+</head>
+
+<body>
+  <div class="parent">
+  <div class="heading"> 
+	<img class="logo left" src="./img/Logo.png" alt="Udacity_logo">
+	<div class="headertext right-align"> RUBANA PALANIAPPAN 
+	<div class= "smalltext right-align"> FRONT-END NINJA</div>
+	</div>
+  </div>
+  <div class="line"></div>
+  <br>
+  <div>
+	<img  class="mainimage" src="./img/html.jpg" alt="intro_img">
+	<br>
+  </div>
+  <h1 class="bigtext">Featured Work</h1>
+  <div class="table-display">
+	<figure class="projectfig">
+	<img class="proj-image" src="./img/Movie_Review.jpg" alt="MovieReview image">
+	<figcaption> 
+		<div class="bigtext"> MOVIE REVIEW </div>
+		<a class="projecturl" href="https://github.com/rubanap/ud036_StarterCode">https://github.com/rubanap/ud036_StarterCode</a>
+	</figcaption>
+	</figure>
+  
+	<figure  class="projectfig">
+	<img class="proj-image" src="./img/frontend.png" alt="FRONT-END image">
+	<figcaption> 
+		<div class="bigtext"> FRONT-END DESIGN </div>
+		<a class="projecturl" href="https://github.com/udacity/Sunflower/">https://github.com/udacity/Sunflower/</a>
+	</figcaption>
+	</figure>
+	<figure class="projectfig">
+	<img class="proj-image" src="./img/download.jpg" alt="sunflower image">
+	<figcaption> 
+		<div class="bigtext"> SUNFLOWER </div>
+		<a class="projecturl" href="https://github.com/udacity/Sunflower/">https://github.com/udacity/Sunflower/</a>
+	</figcaption>
+	</figure>
+  </div>
+ </div>
+</body>
+</html>
